@@ -22,9 +22,9 @@
         <div class="step-footer">
             <div class="btn-group" role="group">
                 <template v-if="!submitSuccess">
-                  <button @click="previousTab" :disabled="currentTab === 0" class="step-button step-button-previous">Previous</button>
-                  <button @click="nextTab" v-if="currentTab < totalTabs - 1" class="step-button step-button-next">Next</button>
-                  <button @click="onSubmit" v-if="currentTab === totalTabs - 1" class="step-button step-button-submit">Submit</button>
+                  <button @click="previousTab" :disabled="currentTab === 0" class="step-button step-button-previous">{{ previousTabText }}</button>
+                  <button @click="nextTab" v-if="currentTab < totalTabs - 1" class="step-button step-button-next">{{ nextTabText }}</button>
+                  <button @click="onSubmit" v-if="currentTab === totalTabs - 1" class="step-button step-button-submit">{{ submitText }}</button>
                 </template>
                 <template v-else>
                   <button @click="reset" class="step-button step-button-reset">Reset</button>
@@ -37,6 +37,17 @@
 import { store } from "./store.js";
 export default {
     name: 'form-wizard',
+    props: {
+        previousTabText: {
+            default: 'Previous'
+        },
+        nextTabText: {
+            default: 'Next'
+        },
+        submitText: {
+            default: 'Submit'
+        }
+    },
     data(){
         return{
             tabs: [],
