@@ -110,7 +110,6 @@ export default {
 
            this._switchTab(0);
            this.submitSuccess = false;
-           this.storeState.v.$reset();
 
            this.$emit('onReset');
         },

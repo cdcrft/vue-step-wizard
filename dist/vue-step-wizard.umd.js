@@ -2041,12 +2041,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"6bb99441-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormWizard.vue?vue&type=template&id=22775cf8&
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"6bb99441-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/FormWizard.vue?vue&type=template&id=30bf8387&
 var render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',{staticClass:"vue-step-wizard"},[_c('div',{staticClass:"step-header"},[_c('div',{staticClass:"step-progress"},[_c('div',{staticClass:"bar progressbar",style:({ width: _vm.progress + '%' })})]),_c('ul',{staticClass:"step-pills"},_vm._l((_vm.tabs),function(tab,index){return _c('li',{key:("tab-" + index),staticClass:"step-item",class:{ 'active': tab.isActive, 'validated': tab.isValidated },on:{"click":function($event){$event.preventDefault();$event.stopPropagation();return _vm.selectTab(index)}}},[_c('a',{staticClass:"step-link",attrs:{"href":"#"}},[_c('span',{staticClass:"tabStatus"},[_vm._v(_vm._s(index+1)+" ")]),_c('span',{staticClass:"tabLabel"},[_vm._v(_vm._s(tab.title))])])])}),0)]),_c('div',{staticClass:"step-body"},[_c('form',[_vm._t("default")],2)]),_c('div',{staticClass:"step-footer"},[_c('div',{staticClass:"btn-group",attrs:{"role":"group"}},[(!_vm.submitSuccess)?[_c('button',{staticClass:"step-button step-button-previous",attrs:{"disabled":_vm.currentTab === 0},on:{"click":_vm.previousTab}},[_vm._v(_vm._s(_vm.previousTabText))]),(_vm.currentTab < _vm.totalTabs - 1)?_c('button',{staticClass:"step-button step-button-next",on:{"click":_vm.nextTab}},[_vm._v(_vm._s(_vm.nextTabText))]):_vm._e(),(_vm.currentTab === _vm.totalTabs - 1)?_c('button',{staticClass:"step-button step-button-submit",on:{"click":_vm.onSubmit}},[_vm._v(_vm._s(_vm.submitText))]):_vm._e()]:[_c('button',{staticClass:"step-button step-button-reset",on:{"click":_vm.reset}},[_vm._v("Reset")])]],2)])])}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/FormWizard.vue?vue&type=template&id=22775cf8&
+// CONCATENATED MODULE: ./src/components/FormWizard.vue?vue&type=template&id=30bf8387&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/web.dom.iterable.js
 var web_dom_iterable = __webpack_require__("ac6a");
@@ -2182,7 +2182,6 @@ var store = {
       this._switchTab(0);
 
       this.submitSuccess = false;
-      this.storeState.v.$reset();
       this.$emit('onReset');
     },
     changeStatus: function changeStatus() {
